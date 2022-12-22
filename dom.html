@@ -1,0 +1,31 @@
+<html>
+    <head>
+       <script>
+             function dis()
+             {
+                var x,y,c;
+                x=parseInt(document.getElementById("a").value);
+                y=parseInt(document.getElementById("b").value);
+                c=x**y;
+                alert("POWER = "+c);
+             }
+             function onmouse(obj)
+             {
+                obj.innerHTML="Thank you";
+             }
+             function outmouse(obj)
+             {
+                obj.innerHTML="thanks for clicking";
+             }
+        </script>
+        </head>
+        <body>
+            <form>
+                Enter a number<input type="text" id="a" ></br>
+                Enter a number<input type="text" id="b" ></br>
+                <input type="button" value="power" onclick="dis()"></br></br>
+                <button onmouseover="onmouse(this)" onmouseout="outmouse(this)" >click me</button>
+                
+            </form>
+        </body>
+</html>
